@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        Hey my name is akeel
+        <h2></h2>
+        <p></p>
+        <nav>
+            <a href="/index.html">Home</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section style="padding-top: 20px;">
+
+            <form action="https://httpbin.org/get" method="get">
+               
+                <fieldset>
+                    <legend>Name</legend>
+
+                    <label for="firstName">First Name*:</label>
+                    <input type="text" name="firstName" id="firstName" required autofocus >
+                    <br><br>
+                    <label for="lastName">Last Name*:</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </fieldset>
+                
+                <br><br>
+                <fieldset>
+                    <legend>Login/Signup Info</legend>
+                    
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                    <br><br>
+                    <label for="password">Password*:</label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    required 
+                    placeholder="8 char - at least one letter and one number"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    >
+                    <br><br>
+
+                    <label for="rememberPassword">Remeber Password:</label>
+                    <input type="checkbox" name="rememberPassword" id="rememberPassword">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Phone Number</legend>
+
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input
+                     type="tel" 
+                     name="phoneNumber" 
+                     id="phoneNumber"
+                     pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                     >
+                    <br><br>
+                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Radio Button</legend>
+
+                    <p>What is your fav food?</p>
+
+                    <label for="">
+
+                    </label>
+
+                    <label>
+                        Pizza:
+                        <input type="radio" name="food" id="">
+                      </label>
+
+                      <br>
+                      <label>
+                        Tacos:
+                        <input type="radio" name="food" id="" value="">
+                      </label>
+
+                      <br>
+
+                      <label>
+                        zzz:
+                        <input type="radio" name="food" id="">
+                      </label>
+                      <br>
+
+                      <label>
+                        Other:
+                        <input type="radio" name="food" id="">
+                      </label>
+                </fieldset>
+                <button type="submit">Submit (GET)</button>
+                <button 
+                type="submit"
+                formaction="https://httpbin.org/post"
+                formmethod="post"
+                >Submit (POST)
+            </button>
+
+                <button type="reset">Reset</button>
+
+            </form>
+            <style>
+                body {
+                        background-image: radial-gradient(pink, white);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                    }
+            </style>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
